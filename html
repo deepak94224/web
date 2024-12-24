@@ -1,1 +1,24 @@
-html and css learning
+ let h1element= document.createElement("h1");
+h1element.textContent="web technologies";
+
+let containerElement=document.getElementById("my-container")
+containerElement.appendChild(h1element);
+ 
+ let btnElement=document.createElement("button");
+ btnElement.textContent="change any style";
+ containerElement.appendChild(btnElement);
+ 
+ btnElement.onclick =function(){
+     h1element.textContent="web development";
+     h1element.classList.add("heading")
+     
+ };
+ let removestylebtnElement =document.createElement("button");
+  removestylebtnElement.textContent="remove style";
+    containerElement.appendChild( removestylebtnElement);
+    
+     removestylebtnElement.onclick =function(){
+          h1element.classList.remove("heading")
+     }
+    
+  
